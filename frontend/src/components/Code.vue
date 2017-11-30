@@ -1,13 +1,20 @@
 <template>
-<div>
-  <div class="code">
-    <!-- code card goes here-->
+<div class="container">
+  <h1>{{ title }}</h1>
+  <div v-if="msg" class="error">
     {{ msg }}
   </div>
+  <!-- code cards go here-->
   <div class="files" v-for="file in files">
-     <div v-html="file"></div>
+     <section>
+        <h3>{{ file.name }}</h3>
+        <pre>
+           <code class="language-c">{{ file.code }}</code>
+        </pre>
+     </section>
   </div>
 </div>
+
 </template>
 
 <script>
@@ -25,19 +32,31 @@ export default {
     }
   },
   mounted () {
-     HTTP.get('api')
+     HTTP.get(`api/labs/${this.$route.params.week}`)
      .then(response => {
-        this.msg = response.data.msg
+        this.files = response.data
+        this.msg = ""
      })
+     .then(() => { Prism.highlightAll() })
      .catch(err => {
         this.msg = err
      })
+  },
+  computed: {
+     title: function() {
+        return `${this.$route.params.week}`
+     }
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+.container {
+   margin: 10%;
+}
+
 h1, h2 {
   font-weight: normal;
 }

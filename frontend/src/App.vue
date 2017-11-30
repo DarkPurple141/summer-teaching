@@ -1,12 +1,16 @@
 <template>
   <div id="app">
     <router-view/>
+    <hr/>
+    <AppFooter/>
   </div>
 </template>
 
 <script>
+import AppFooter from '@/components/sub/Footer'
 export default {
-  name: 'app'
+  name: 'app',
+  components: {AppFooter}
 }
 </script>
 
