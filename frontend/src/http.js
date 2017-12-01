@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const HOST = "http://localhost/~TheHD"
+const HOST = "https://cgi.cse.unsw.edu.au/~z3420752"
 
 const HTTP = axios.create({
   baseURL: `${HOST}/teaching-api/index.cgi`//,

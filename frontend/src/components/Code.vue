@@ -25,10 +25,7 @@ export default {
   data () {
     return {
       msg: 'Not loaded',
-      files: [
-         '<p>Nothing here yet.</p>',
-         '<p>Nothing here yet.</p>'
-      ]
+      files: []
     }
   },
   mounted () {

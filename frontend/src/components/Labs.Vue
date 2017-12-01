@@ -11,7 +11,7 @@
          <div class="lab-content">
             <h2>{{ lab.title }}</h2>
             <p>{{ lab.description }}</p>
-            <router-link :to="{ path: lab.file }">More</router-link>
+            <router-link :to="{ path: lab.file }" append>More</router-link>
          </div>
       </div>
    </div>
@@ -33,7 +33,7 @@ export default {
   mounted () {
      HTTP.get('api/labs')
      .then(response => {
-        response.data.forEach(item => {
+        response.data.results.forEach(item => {
            this.labs.push({
              title: item.name,
              path: item.path,
