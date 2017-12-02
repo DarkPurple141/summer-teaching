@@ -1,16 +1,17 @@
 <template>
   <div id="app">
     <router-view/>
-    <hr/>
     <AppFooter/>
   </div>
 </template>
 
 <script>
 import AppFooter from '@/components/sub/Footer'
+import HTTP from './http'
+
 export default {
   name: 'app',
-  components: {AppFooter}
+  components: { AppFooter }
 }
 </script>
 
