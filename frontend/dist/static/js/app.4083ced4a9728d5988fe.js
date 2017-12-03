@@ -14,13 +14,6 @@ webpackJsonp([1],{
 
 /***/ }),
 
-/***/ "8pds":
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ "EGOM":
 /***/ (function(module, exports) {
 
@@ -169,37 +162,23 @@ var vue_router_esm = __webpack_require__("/ocq");
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ var Notes = ({
   name: 'HelloWorld',
   data: function data() {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'No content here yet!'
     };
   }
 });
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-4241e014","hasScoped":true,"transformToRequire":{"video":"src","source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/components/Notes.vue
-var Notes_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"hello"},[_c('h1',[_vm._v(_vm._s(_vm.msg))]),_vm._v(" "),_c('h2',[_vm._v("Essential Links")]),_vm._v(" "),_vm._m(0,false,false),_vm._v(" "),_c('h2',[_vm._v("Ecosystem")]),_vm._v(" "),_vm._m(1,false,false)])}
-var Notes_staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('ul',[_c('li',[_c('a',{attrs:{"href":"https://vuejs.org","target":"_blank"}},[_vm._v("Core Docs")])]),_vm._v(" "),_c('li',[_c('a',{attrs:{"href":"https://forum.vuejs.org","target":"_blank"}},[_vm._v("Forum")])]),_vm._v(" "),_c('li',[_c('a',{attrs:{"href":"https://chat.vuejs.org","target":"_blank"}},[_vm._v("Community Chat")])]),_vm._v(" "),_c('li',[_c('a',{attrs:{"href":"https://twitter.com/vuejs","target":"_blank"}},[_vm._v("Twitter")])]),_vm._v(" "),_c('br'),_vm._v(" "),_c('li',[_c('a',{attrs:{"href":"http://vuejs-templates.github.io/webpack/","target":"_blank"}},[_vm._v("Docs for This Template")])])])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('ul',[_c('li',[_c('a',{attrs:{"href":"http://router.vuejs.org/","target":"_blank"}},[_vm._v("vue-router")])]),_vm._v(" "),_c('li',[_c('a',{attrs:{"href":"http://vuex.vuejs.org/","target":"_blank"}},[_vm._v("vuex")])]),_vm._v(" "),_c('li',[_c('a',{attrs:{"href":"http://vue-loader.vuejs.org/","target":"_blank"}},[_vm._v("vue-loader")])]),_vm._v(" "),_c('li',[_c('a',{attrs:{"href":"https://github.com/vuejs/awesome-vue","target":"_blank"}},[_vm._v("awesome-vue")])])])}]
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-5565a394","hasScoped":true,"transformToRequire":{"video":"src","source":"src","img":"src","image":"xlink:href"},"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0!./src/components/Notes.vue
+var Notes_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"main"},[_c('div',{staticClass:"container"},[_c('h1',[_vm._v(_vm._s(_vm.msg))])])])}
+var Notes_staticRenderFns = []
 var Notes_esExports = { render: Notes_render, staticRenderFns: Notes_staticRenderFns }
 /* harmony default export */ var components_Notes = (Notes_esExports);
 // CONCATENATED MODULE: ./src/components/Notes.vue
 function Notes_injectStyle (ssrContext) {
-  __webpack_require__("8pds")
+  __webpack_require__("hsfl")
 }
 var Notes_normalizeComponent = __webpack_require__("VU/8")
 /* script */
@@ -211,7 +190,7 @@ var Notes___vue_template_functional__ = false
 /* styles */
 var Notes___vue_styles__ = Notes_injectStyle
 /* scopeId */
-var Notes___vue_scopeId__ = "data-v-4241e014"
+var Notes___vue_scopeId__ = "data-v-5565a394"
 /* moduleIdentifier (server only) */
 var Notes___vue_module_identifier__ = null
 var Notes_Component = Notes_normalizeComponent(
@@ -632,6 +611,13 @@ new vue_esm["a" /* default */]({
 
 /***/ }),
 
+/***/ "hsfl":
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "o4Ku":
 /***/ (function(module, exports) {
 
@@ -647,4 +633,4 @@ new vue_esm["a" /* default */]({
 /***/ })
 
 },["NHnr"]);
-//# sourceMappingURL=app.6831cd49a0d72946b98f.js.map
+//# sourceMappingURL=app.4083ced4a9728d5988fe.js.map
