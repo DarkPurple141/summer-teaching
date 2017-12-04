@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <crumbs></crumbs>
-    <router-view/>
+    <router-view :labs="this.$root.$data.labs"
+                 :weeks="this.$root.$data.weeks"
+                 @load="addToCache" />
     <AppFooter/>
   </div>
 </template>
@@ -13,7 +15,13 @@ import HTTP from './http'
 
 export default {
   name: 'app',
-  components: { Crumbs, AppFooter }
+  components: { Crumbs, AppFooter },
+  methods: {
+     addToCache: function(name, data, cb) {
+        this.$root.$data.weeks[name] = data
+        cb()
+     }
+ }
 }
 </script>
 

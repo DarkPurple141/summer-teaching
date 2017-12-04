@@ -5,7 +5,7 @@ import App from './App'
 import router from './router'
 import VuePrism from 'vue-prism'
 import HTTP from './http'
-import labs from './init'
+import { labs, weeks } from './init'
 
 Vue.use(VuePrism)
 
@@ -15,7 +15,6 @@ import 'prismjs/components/prism-c.min.js'
 Vue.config.productionTip = false
 
 
-
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
@@ -23,6 +22,7 @@ new Vue({
   template: '<App/>',
   components: { App },
   data: {
-     labs: labs
+     labs: labs,
+     weeks: weeks
   }
 })

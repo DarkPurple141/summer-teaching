@@ -7,7 +7,7 @@
     <div v-show="!loaded">LOADING!</div>
     <!-- card for each lab -->
     <div class="container">
-       <div class="lab" v-for="lab in this.$root.$data.labs">
+       <div class="lab" v-for="lab in this.labs">
          <div class="lab-content">
             <h2>{{ lab.title }}</h2>
             <p>{{ lab.description }}</p>
@@ -22,6 +22,7 @@
 
 export default {
   name: 'Labs',
+  props: ['labs'],
   data () {
     return {
       error: false,
@@ -72,6 +73,10 @@ export default {
 
 p {
    text-align: center;
+}
+
+h1 {
+   margin-bottom: 5px;
 }
 
 h1, h2 {

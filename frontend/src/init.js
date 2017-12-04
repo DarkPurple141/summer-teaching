@@ -1,6 +1,7 @@
 import HTTP from './http'
 
 const labs = []
+const weeks = {}
 
 HTTP.get('api/labs')
 .then(response => {
@@ -24,7 +25,6 @@ HTTP.get('api/labs')
    })
    .then(() => {
       labs.sort((a, b) => a.file > b.file)
-      console.log(labs)
    })
    .catch(err => {
       throw err
@@ -34,4 +34,4 @@ HTTP.get('api/labs')
    this.error = err
 })
 
-export default labs;
+export { labs, weeks };
