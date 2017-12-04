@@ -39,8 +39,13 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
+.card {
+   padding: 1%;
+}
+
 .home {
    margin: 5%;
+   padding-bottom: 100px;
 }
 
 h1, h2 {
