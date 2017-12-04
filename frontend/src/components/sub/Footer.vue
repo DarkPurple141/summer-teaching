@@ -2,9 +2,11 @@
    <div id="appFooter">
       <div class="footer">
          <hr>
+         <div class="contact">
+            <div class="contact-item">e. <a href="mailto:a.hinds@unsw.edu.au">Alex Hinds</a></div>
+            <div class="contact-item">git. <a target="_blank" href="https://github.com/DarkPurple141/teaching-api">Repository</a></div>
+         </div>
          <p><em>Made with vue.js</em></p>
-         <p>e. <a href="mailto:a.hinds@unsw.edu.au">Alex Hinds</a></p>
-         <p>git. <a target="_blank" href="https://github.com/DarkPurple141/teaching-api">Repository</a></p>
       </div>
    </div>
 </template>
@@ -33,7 +35,14 @@ hr {
    width: 50%;
 }
 
+.contact-item {
+   display: inline-block;
+   padding: 5px;
+}
+
+
 .footer {
+   font-size: 0.9em;
    margin-top: 20px;
    width: 100%;
 }
