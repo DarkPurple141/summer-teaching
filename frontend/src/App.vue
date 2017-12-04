@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <crumbs></crumbs>
     <router-view/>
     <AppFooter/>
   </div>
@@ -7,11 +8,12 @@
 
 <script>
 import AppFooter from '@/components/sub/Footer'
+import Crumbs from '@/components/sub/Crumbs'
 import HTTP from './http'
 
 export default {
   name: 'app',
-  components: { AppFooter }
+  components: { Crumbs, AppFooter }
 }
 </script>
 
@@ -22,6 +24,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 20px;
 }
 </style>

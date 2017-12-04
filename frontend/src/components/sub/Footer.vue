@@ -23,10 +23,14 @@ export default {
    left: 1%;
    bottom: 0;
    width: 90%;
-   padding-top: 20px;
+   padding-top: 0px;
    padding-bottom: 20px;
    padding-left: 3.5%;
    padding-right: 3.5%;
+}
+
+hr {
+   width: 50%;
 }
 
 .footer {

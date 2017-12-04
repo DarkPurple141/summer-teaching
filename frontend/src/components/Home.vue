@@ -40,7 +40,7 @@ export default {
 <style scoped>
 
 .home {
-   margin: 10%;
+   margin: 5%;
 }
 
 h1, h2 {
