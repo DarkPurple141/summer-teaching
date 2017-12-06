@@ -7,7 +7,7 @@
     <div v-show="!loaded">LOADING!</div>
     <!-- card for each lab -->
     <div class="container">
-       <div class="lab" v-for="lab in this.labs">
+       <div class="lab" v-for="lab in this.labs" v-show="lab.active">
          <div class="lab-content">
             <h2>{{ lab.title }}</h2>
             <p>{{ lab.description }}</p>

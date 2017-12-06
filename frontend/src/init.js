@@ -10,7 +10,8 @@ HTTP.get('api/labs')
         title: item.name,
         path: item.path,
         file: item.file,
-        description: "Pending..."
+        description: "Pending...",
+        active: false
      })
    })
 })
@@ -20,6 +21,9 @@ HTTP.get('api/labs')
    }))
    .then((args) => {
       args.forEach((res, index) => {
+        if (res.data.description != "No content") {
+           labs[index].active = true
+        }
         labs[index].description = res.data.description
       })
    })
