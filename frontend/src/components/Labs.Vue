@@ -4,7 +4,7 @@
     <div v-if="error">
       ERROR: {{ error }}
     </div>
-    <div v-show="!loaded">LOADING!</div>
+    <div v-show="!this.labs.loaded">Loading content from database..</div>
     <!-- card for each lab -->
     <div class="container">
        <div class="lab" v-for="lab in this.labs" v-show="lab.active">
@@ -25,12 +25,8 @@ export default {
   props: ['labs'],
   data () {
     return {
-      error: false,
-      loaded: false
+      error: false
     }
-  },
-  mounted () {
-      this.loaded = true
   }
 }
 </script>
@@ -41,7 +37,7 @@ export default {
 .container {
    padding-left: 9%;
    padding-right: 9%;
-   padding-bottom: 200px;
+   padding-bottom: 140px;
    display: flex;
    flex-flow: row wrap;
    justify-content: space-between;

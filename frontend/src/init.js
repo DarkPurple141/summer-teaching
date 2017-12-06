@@ -1,6 +1,7 @@
 import HTTP from './http'
 
 const labs = []
+labs.loaded = false
 const weeks = {}
 
 HTTP.get('api/labs')
@@ -29,6 +30,7 @@ HTTP.get('api/labs')
    })
    .then(() => {
       labs.sort((a, b) => a.file > b.file)
+      labs.loaded = true
    })
    .catch(err => {
       throw err

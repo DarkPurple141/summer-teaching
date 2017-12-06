@@ -61,7 +61,7 @@ export default {
 <style scoped>
 
 .container {
-   margin: 0% 8%;
+   margin: 0% 7%;
    padding-bottom: 150px;
 }
 
