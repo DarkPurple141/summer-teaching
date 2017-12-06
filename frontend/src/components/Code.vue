@@ -65,6 +65,16 @@ export default {
    padding-bottom: 150px;
 }
 
+@media (max-width:632px) {
+   .container {
+      margin: 0% 1%;
+   }
+
+   code {
+      font-size: 0.8em;
+   }
+}
+
 h1, h2 {
   font-weight: normal;
 }
