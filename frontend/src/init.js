@@ -15,28 +15,25 @@ HTTP.get('api/labs')
         active: false
      })
    })
+   return labs
 })
-.then(() => {
-   Promise.all(labs.map(item => {
-      return HTTP.get(`api/${item.path}/meta.json`)
-   }))
-   .then((args) => {
-      args.forEach((res, index) => {
-        if (res.data.description != "No content") {
+.then(labs => {
+   labs.sort((a, b) => a.file > b.file)
+
+   return HTTP.get('api/labs/meta/')
+})
+.then(response => response.data.results)
+.then(results => {
+   results.forEach((week, index) => {
+        if (week.description != "No content") {
            labs[index].active = true
         }
-        labs[index].description = res.data.description
-      })
-   })
-   .then(() => {
-      labs.sort((a, b) => a.file > b.file)
-      labs.loaded = true
-   })
-   .catch(err => {
-      throw err
-   })
+        labs[index].description = week.description
+     })
+   labs.loaded = true
 })
 .catch(err => {
+   throw err
    this.error = err
 })
 
