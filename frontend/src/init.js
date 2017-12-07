@@ -4,6 +4,7 @@ const labs = []
 labs.loaded = false
 const weeks = {}
 
+// INIT cache
 HTTP.get('api/labs')
 .then(response => {
    response.data.results.forEach(item => {

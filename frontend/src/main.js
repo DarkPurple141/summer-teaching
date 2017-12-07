@@ -4,16 +4,20 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import VuePrism from 'vue-prism'
+import VueAnalytics from 'vue-analytics'
 import HTTP from './http'
 import { labs, weeks } from './init'
 
 Vue.use(VuePrism)
+Vue.use(VueAnalytics, {
+   id : 'UA-25942721-2',
+   router
+})
 
 import 'prismjs/themes/prism.css'
 import 'prismjs/components/prism-c.min.js'
 
 Vue.config.productionTip = false
-
 
 /* eslint-disable no-new */
 new Vue({
