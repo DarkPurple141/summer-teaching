@@ -36,7 +36,7 @@ export default {
         this.msg = "Loading content.."
         HTTP.get(`api/labs/${name}`)
         .then(response => {
-          //vm.$root.$data.weeks.$set(name, response.data)
+
           return response.data
        })
        .then(data =>  this.$emit('load', name, data, () => {
