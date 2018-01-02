@@ -33,7 +33,8 @@ export default new Router({
     {
       path: '/code/:week',
       name: 'Code',
-      component: Code
+      component: Code,
+      props: true
     }
   ]
 })

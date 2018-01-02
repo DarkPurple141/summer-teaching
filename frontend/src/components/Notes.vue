@@ -1,18 +1,41 @@
 <template>
    <div class="main">
      <div class="container">
-       <h1>{{ msg }}</h1>
+       <h1>Notes</h1>
+       <ol>
+          <li v-for="post in posts">
+             <router-link
+             :to="{
+                name: 'Post',
+                params: {
+                   title: post.name,
+                   article: post.path
+                }}">{{ post.name }}
+             </router-link>
+          </li>
+       </ol>
      </div>
    </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Notes',
   data () {
     return {
-      msg: 'No content here yet!'
+      posts: []
     }
+  },
+  mounted() {
+     fetch('static/posts/meta.json', {
+        credentials: 'same-origin'
+     })
+     .then(response => response.json())
+     .then(data => {
+        data.posts.forEach(item => {
+           this.posts.push(item)
+        })
+     }).catch(err => {throw err})
   }
 }
 </script>
@@ -27,7 +50,7 @@ export default {
 h1, h2 {
   font-weight: normal;
 }
-ul {
+ol, ul {
   list-style-type: none;
   padding: 0;
 }
