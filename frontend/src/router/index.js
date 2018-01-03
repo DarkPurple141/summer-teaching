@@ -18,7 +18,8 @@ export default new Router({
     {
       path: '/notes/:article',
       name: 'Post',
-      component: Post
+      component: Post,
+      props: true
     },
     {
       path: '/code',

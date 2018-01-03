@@ -1,6 +1,6 @@
 <template>
   <section class="post">
-     <h1>{{ title }}</h1>
+     {{ post }}
      <article v-html="content">
      </article>
 </section>
@@ -12,9 +12,13 @@ const converter = new showdown.Converter()
 
 export default {
   name: 'Post',
+  props: {
+      post: {
+         type: Object
+      }
+  },
   data () {
     return {
-      title: this.$route.params.title,
       content: ''
      }
   },
@@ -32,9 +36,15 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
+
+article {
+   margin: 1em auto 150px auto;
+   padding: 1em 10% 1em 10%;
+   text-align: left;
+   background-color: #eee;
+   border-radius: 3em;
 }
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -42,8 +52,5 @@ ul {
 li {
   display: inline-block;
   margin: 0 10px;
-}
-a {
-  color: #42b983;
 }
 </style>
