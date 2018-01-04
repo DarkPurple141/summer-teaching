@@ -42,11 +42,7 @@ article {
    margin: 1em 3em 150px 3em;
    padding: 1em 10% 1em 10%;
    text-align: left;
-   box-shadow: 1px 0px 3px 3px #cccccc;
-}
-
-article h2 {
-   border-bottom: 5px solid rgba(240, 240, 240, .5);
+   /*box-shadow: 1px 0px 3px 3px #cccccc;*/
 }
 
 ul {
