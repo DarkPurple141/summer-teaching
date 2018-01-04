@@ -38,11 +38,10 @@ export default {
 <style scoped>
 
 article {
-   margin: 1em auto 150px auto;
+   margin: 1em 3em 150px 3em;
    padding: 1em 10% 1em 10%;
    text-align: left;
    background-color: #eee;
-   border-radius: 3em;
 }
 
 ul {
