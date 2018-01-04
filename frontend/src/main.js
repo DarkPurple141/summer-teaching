@@ -17,6 +17,7 @@ Vue.use(VueAnalytics, {
 import 'prismjs/themes/prism.css'
 import 'prismjs/components/prism-c.min.js'
 import 'prismjs/components/prism-yaml.min.js'
+import 'prismjs/components/prism-bash.min.js'
 
 Vue.config.productionTip = false
 

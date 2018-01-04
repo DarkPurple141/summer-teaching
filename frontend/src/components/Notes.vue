@@ -56,8 +56,7 @@ ol, ul {
   padding: 0;
 }
 li {
-  display: inline-block;
-  margin: 0 10px;
+  margin: 10px;
 }
 
 </style>

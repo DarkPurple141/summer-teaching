@@ -4,6 +4,11 @@
          "name": "Continuous Integration",
          "path": "ci.md",
          "date": "2018-01-02T18:25:43.511Z"
+      },
+      {
+         "name": "The basics of Git",
+         "path": "git.md",
+         "date": "2017-06-02T18:25:43.511Z"
       }
    ]
 }

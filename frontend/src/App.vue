@@ -28,7 +28,7 @@ export default {
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  font-size: normal;
+  font-size: medium;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -36,9 +36,9 @@ export default {
   margin: 30px;
 }
 
-h1, h2, h3, h4 {
-  font-weight: normal;
-  text-align: center;
+h1, h2, h3, h4, h5 {
+   font-weight: 400;
+   text-align: center;
 }
 
 h1, h2 {
@@ -50,7 +50,7 @@ a:hover {
 }
 
 a:active {
-   color: #62c090; 
+   color: #62c090;
 }
 
 </style>
