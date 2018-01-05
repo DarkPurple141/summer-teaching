@@ -40,9 +40,17 @@ export default {
 
 article {
    margin: 1em 3em 150px 3em;
-   padding: 1em 10% 1em 10%;
+   padding: 1em 2.5% 1em 2.5%;
    text-align: left;
    /*box-shadow: 1px 0px 3px 3px #cccccc;*/
+}
+
+@media screen and (max-width: 500px) {
+   article {
+      margin: 1em 1em 150px 1em;
+      padding: 1em 0px 1em 0px;
+      /*box-shadow: 1px 0px 3px 3px #cccccc;*/
+   }
 }
 
 ul {
